@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f6f3;
+  margin: 0;
+  color: #222;
+}
+
+nav {
+  background: #353535;
+  padding: 12px 24px;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+h2, h3, h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px #eee;
+  margin: 12px 0;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-item span {
+  font-size: 1.1em;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+form {
+  background: #fafafa;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px #eee;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 370px;
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #ff9800;
+  outline: none;
+}
+
+button {
+  background: #ff9800;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 1px 3px #eee;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 8px;
+  }
+
+  form {
+    padding: 14px 10px;
+    max-width: 100%;
+  }
+
+  .menu-item {
+    padding: 12px 10px;
+  }
+}
