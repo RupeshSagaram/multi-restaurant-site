@@ -1,18 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const restaurants = ["pizza-hut", "burger-king", "sushi-place"];
+import { RESTAURANTS } from "../constants/restaurants";
 
 const HomePage = () => (
   <div>
     <h2>Welcome to Multi-Restaurant Platform</h2>
-    <ul>
-      {restaurants.map((r) => (
-        <li key={r}>
-          <Link to={`/${r}`}>{r.replace(/-/g, " ")}</Link>
-        </li>
+    <div className="restaurant-grid">
+      {RESTAURANTS.map((r) => (
+        <div key={r} className="restaurant-card">
+          <div className="restaurant-image">
+            <img src={`/images/${r}.svg`} alt={r.replace(/-/g, " ")} />
+          </div>
+          <div className="restaurant-content">
+            <h3>{r.replace(/-/g, " ")}</h3>
+            <Link to={`/${r}`} className="restaurant-link">
+              View Menu
+            </Link>
+          </div>
+        </div>
       ))}
-    </ul>
+    </div>
   </div>
 );
 

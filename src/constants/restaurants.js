@@ -1,0 +1,1 @@
+export const RESTAURANTS = ["pizza-hut", "burger-king", "dominos", "sushi-place"];
