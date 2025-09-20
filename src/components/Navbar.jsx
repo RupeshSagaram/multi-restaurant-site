@@ -11,6 +11,7 @@ const Navbar = () => (
         {name.replace(/-/g, " ")}
       </Link>
     ))}
+    <Link to="/pizza-hut/admin" style={{ marginLeft: 16 }}>Admin</Link>
   </nav>
 );
 

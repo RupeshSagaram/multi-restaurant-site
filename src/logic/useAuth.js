@@ -4,7 +4,7 @@ import { useState } from "react";
 export const useAuth = () => {
   const [isAuthenticated, setAuthenticated] = useState(false);
 
-  const login = (username, password) => {
+  const login = () => {
     // Accept any credentials for demo
     setAuthenticated(true);
   };
