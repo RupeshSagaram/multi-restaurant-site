@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const restaurants = ["pizza-hut", "burger-king", "sushi-place"];
+import { RESTAURANTS } from "../constants/restaurants";
 
 const Navbar = () => (
   <nav>
     <Link to="/">Home</Link>
-    {restaurants.map((name) => (
+    {RESTAURANTS.map((name) => (
       <Link key={name} to={`/${name}`} style={{ marginLeft: 16 }}>
         {name.replace(/-/g, " ")}
       </Link>

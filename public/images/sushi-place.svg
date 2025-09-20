@@ -1,0 +1,11 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#2d5016"/>
+  <rect x="75" y="70" width="150" height="60" fill="#ffffff" rx="30"/>
+  <rect x="85" y="80" width="20" height="40" fill="#ff4500"/>
+  <rect x="115" y="80" width="20" height="40" fill="#90ee90"/>
+  <rect x="145" y="80" width="20" height="40" fill="#ff4500"/>
+  <rect x="175" y="80" width="20" height="40" fill="#90ee90"/>
+  <rect x="205" y="80" width="20" height="40" fill="#ff4500"/>
+  <rect x="50" y="110" width="200" height="10" fill="#8b4513"/>
+  <text x="150" y="170" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Sushi Place</text>
+</svg>
